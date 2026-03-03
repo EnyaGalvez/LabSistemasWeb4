@@ -65,4 +65,25 @@ addBtn.onclick = function() {
 
     nameInput.value = "";
     descInput.value = "";
+
+   
+    const diffSelect = document.getElementById('mission-diff');
+
+    diffSelect.addEventListener('change', function() {
+        const value = diffSelect.value;
+        
+        if (value === "10") {
+            diffSelect.style.color = "#a3e635"; // Verde (Fácil)
+            diffSelect.style.borderColor = "#a3e635";
+        } else if (value === "25") {
+            diffSelect.style.color = "#facc15"; // Amarillo (Normal)
+            diffSelect.style.borderColor = "#facc15";
+        } else if (value === "50") {
+            diffSelect.style.color = "#f87171"; // Rojo (Difícil)
+            diffSelect.style.borderColor = "#f87171";
+        } else {
+            diffSelect.style.color = "#e2e8f0"; // Color original
+            diffSelect.style.borderColor = "#e2e8f0";
+        }
+    });
 };
