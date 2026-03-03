@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Disci-app - Gestion de misiones</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Disci-app</h1>
+        <p>XP Total: <span id="global-xp">0</span></p>
+        <p>Rango: <span id="user-rank">Novice</span></p>
+    </header>
+
+    <main>
+        <section id="form-section">
+            <h2>Crear Nueva Misión</h2>
+            <input type="text" id="mission-name" placeholder="Nombre de la misión">
+            <textarea id="mission-desc" placeholder="Descripción"></textarea>
+            <select id="mission-diff">
+                <option value="10">Fácil (10 XP)</option>
+                <option value="25">Normal (25 XP)</option>
+                <option value="50">Difícil (50 XP)</option>
+            </select>
+            <button id="add-btn">Añadir Hábito</button>
+        </section>
+
+        <section id="list-section">
+            <h2>Mis Misiones</h2>
+            <ul id="mission-list"></ul>
+        </section>
+    </main>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
