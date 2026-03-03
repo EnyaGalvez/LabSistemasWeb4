@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Twinkle+Star&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Twinkle+Star&display=swap');
 
 body {
     font-family: 'Karla', sans-serif;
@@ -9,10 +9,16 @@ body {
     padding: 20px
 }
 
-h1, h2, h3 {
+h1 {
     font-family: 'Twinkle Star', cursive;
     color: #22d3ee;
     text-align: center
+}
+
+h2, h3 {
+    font-family: EB Garamond, serif;
+    color: #38bdf8;
+    font-weight: 600
 }
 
 header {
@@ -32,11 +38,11 @@ header {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 }
 
-input, textarea, select, button {
+input, textarea, select {
     display: block;
     width: 100%;
     margin-bottom: 10px;
-    padding: 12px;
+    padding: 20px;
     background-color: #1e293b;
     border: 1px solid #334155;
     color: white;
